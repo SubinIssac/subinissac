@@ -13,6 +13,7 @@ font-family: 'Open Sans', sans-serif;
 .navbar-brand {
     font-family: 'Pecita';
     font-size: 35px;
+    color: #000849;
 }
 .navbar {
     z-index: 999;
@@ -43,20 +44,35 @@ font-family: 'Open Sans', sans-serif;
     flex-direction: row;
     align-items: center;
 }
-.navbar-dark .navbar-nav .nav-link {
-    color: rgb(255 255 255);
-    font-size: 16px;
+.navbar-light .navbar-nav .nav-link {
+    color: #000849;
+    font-size: 14px;
+    font-weight: 600;
 }
 /* Bootstrap-overwrite--END */
 /* custom */
 .Intro-section{
     background-color: #1B1B1B;
-    height: 90vh;
-    position: relative;
-    background-image: url(../images/intro-pattern.png);
-    background-position: 330px 0px;
-    background-repeat: no-repeat;
+    
+    background-color:hsla(0,0%,100%,1);
+background-image:
+radial-gradient(at 40% 20%, hsla(206,81%,81%,1) 0px, transparent 50%),
+radial-gradient(at 100% 100%, hsla(239,82%,74%,1) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(189,100%,56%,1) 0px, transparent 50%),
+radial-gradient(at 0% 97%, hsla(207,96%,90%,1) 0px, transparent 50%),
+radial-gradient(at 79% 2%, hsla(103,58%,65%,1) 0px, transparent 50%);
     overflow: hidden;
+    height: 100vh;
+}
+.Intro-section:before{
+    background: url(../images/intro-pattern.png) no-repeat center center/cover;
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    opacity: .1; 
 }
 .intro-image-img{
     position: absolute;
@@ -64,7 +80,7 @@ font-family: 'Open Sans', sans-serif;
     top: 71px;
 }
 .intro-text{
-    color: #fff;
+    color: #000849;
     padding-top: 160px;
 }
 .intro-text h1{
@@ -72,15 +88,16 @@ font-family: 'Open Sans', sans-serif;
     margin-bottom: 28px;
 }
 .intro-text p{
-    font-size: 18px;
-    line-height: 2;
+    font-size: 20px;
+    line-height: 1.7;
     margin-bottom: 50px;
+    text-decoration: overline;
 }
 .border-circle{
     height: 118px;
     width: 118px;
     display: inline-block;
-    color: #fff;
+    color: #000849;;
     font-size: 11px;
 }
 .border-circle:hover{
@@ -104,7 +121,6 @@ font-family: 'Open Sans', sans-serif;
     display: block;
     -webkit-animation: spinX 3s infinite;
     animation: spin 6s linear infinite;
-    opacity: .5;
 
 }
 @keyframes spin {
@@ -187,7 +203,7 @@ font-family: 'Open Sans', sans-serif;
     padding-bottom: 50px;
 }
 .mi-se-title{
-    color: #1B1B1B !important;
+    color: #000849 !important;
 }
 .title-sub-text{
     font-size: 16px;
@@ -235,6 +251,11 @@ font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(
 90deg
 , rgba(0,0,0,1) 0%, rgb(0 0 0 / 84%) 55%, rgb(255 255 255 / 0%) 100%), url(../images/ccpeople.png);
+}
+.proj-4{
+    background-image: linear-gradient(
+90deg
+, rgba(0,0,0,1) 0%, rgb(0 0 0 / 84%) 55%, rgb(255 255 255 / 0%) 100%), url(../images/etihad/head-img.webp);
 }
 .card.proj-1 h6:first-child{
 font-size: 22px;
@@ -330,6 +351,9 @@ img{
     .Pr-head.pro-3{
         background-image: url(../images/ccpeople.png);
    }
+   .Pr-head.pro-4{
+    background-image: url(../images/etihad/head-img.webp);
+}
 .title-left{
     font-size: 24px;
     color: #f15b34;
@@ -364,14 +388,11 @@ img{
 }
 @media (max-width: 1024px) { 
 .Intro-section {
-    height: auto;
-    overflow: unset;
     padding-bottom: 50px;
 }
 }
 @media (max-width: 768px) { 
     .intro-text {
-        color: #fff;
         padding-top: 245px;
     }
     .intro-image-img {
@@ -384,10 +405,7 @@ img{
     height: calc(100vh - 23vh);
     width: unset;
     }
-    .Intro-section {
-        background-position: -330px 0px;
-    }
-    .navbar-dark .navbar-collapse .navbar-nav .nav-link {
+    .navbar-light .navbar-collapse .navbar-nav .nav-link {
         border-bottom: 1px solid #2d2d2d;
     }
  }

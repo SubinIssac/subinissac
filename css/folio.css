@@ -12,7 +12,9 @@
     background-size: cover;
     background-color: #fff;
 }
-
+.navbar-dark .navbar-nav .nav-link{
+    color: #ffffff !important;
+  }
 .inline-menu .navbar-nav {
     flex-direction: row;
     display: flex;

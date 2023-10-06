@@ -8,6 +8,9 @@
     color: #00233c;
     line-height: 26px;
 }
+.navbar-dark .navbar-nav .nav-link{
+    color: #ffffff !important;
+  }
 /* imported---------------------------END*/
 .work-card.project-2{
     background-image: url(../images/facile-fly/card-bg.png);
