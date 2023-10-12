@@ -377,9 +377,6 @@ font-size: 12px;
 /* footer -----------------------------END*/
 /* MQ -----------------------------------------------------------------------*/
 @media (min-width: 992px) {
-    .bench-gallery > li {
-        flex-basis: 150px;/* width: 200px; */
-    }
     .pro-discrp {
         width: calc(100% - 29vw);
     }
@@ -396,6 +393,9 @@ font-size: 12px;
 }
 
 @media (max-width: 992px) {
+    .bench-gallery > li {
+        flex-basis: 150px;/* width: 200px; */
+    }
     .pro-footer{
         flex-direction: column;
     }
