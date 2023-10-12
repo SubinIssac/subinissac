@@ -423,6 +423,9 @@ margin-bottom: 15px;
 }
 
 @media (max-width: 567px) {
+    .bench-gallery > li {
+        flex-basis: 125px;/* width: 200px; */
+    }
     .intro-image-img {
         opacity: .1;
         right: 0;
