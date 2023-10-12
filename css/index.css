@@ -63,7 +63,7 @@ body {
 
 .navbar-light .navbar-nav .nav-link {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* Bootstrap-overwrite--END */
@@ -103,12 +103,12 @@ radial-gradient(at 79% 2%, hsla(103,58%,65%,15%) 0px, transparent 50%); */
 }
 
 .intro-text h1 {
-    font-size: 60px;
+    font-size: 52px;
     margin-bottom: 28px;
 }
 
 .intro-text p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.7;
     margin-bottom: 50px;
 }
@@ -127,10 +127,11 @@ radial-gradient(at 79% 2%, hsla(103,58%,65%,15%) 0px, transparent 50%); */
     font-size: 16px;
     margin-top: 14px;
     font-weight: 500;
+    line-height: 24px;
 }
 
 .sec-title {
-    font-size: 42px !important;
+    font-size: 32px !important;
     font-weight: bold;
     margin: 0px 0px 50px;
     
@@ -382,7 +383,7 @@ font-size: 12px;
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-left: 2.5rem;
+        padding-left: 1.5rem;
     }
 }
 
