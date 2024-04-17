@@ -34,13 +34,14 @@ body {
 }
 .card {
     background-color: #000;
-    padding: 50px;
+    padding: 30px;
     color: #fff;
     border: 0;
     border-radius: 10px;
     overflow: hidden;
     background-size: cover;
     margin-bottom: 50px;
+    max-height: 250px;
 }
 
 .card:before {
@@ -77,7 +78,7 @@ radial-gradient(at 0% 0%, hsla(189,100%,56%,15%) 0px, transparent 50%),
 radial-gradient(at 0% 97%, hsla(207,96%,90%,15%) 0px, transparent 50%),
 radial-gradient(at 79% 2%, hsla(103,58%,65%,15%) 0px, transparent 50%); */
     overflow: hidden;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 /* .Intro-section:before {
@@ -94,11 +95,12 @@ radial-gradient(at 79% 2%, hsla(103,58%,65%,15%) 0px, transparent 50%); */
 .intro-image-img {
     position: absolute;
     max-width: 100%;
+    margin-top: 70px;
 }
 
 .intro-text {
     color: #000849;
-    padding-top: 160px;
+    padding-top: 100px;
 }
 
 .intro-text h1 {
@@ -132,7 +134,7 @@ radial-gradient(at 79% 2%, hsla(103,58%,65%,15%) 0px, transparent 50%); */
 .sec-title {
     font-size: 32px !important;
     font-weight: bold;
-    margin: 0px 0px 50px;
+    margin: 0px 0px 20px;
     
 }
 
@@ -147,16 +149,16 @@ radial-gradient(at 79% 2%, hsla(103,58%,65%,15%) 0px, transparent 50%); */
 }
 
 .role {
-    margin-top: 100px !important;
+    margin: 10px  0!important;
     margin-bottom: 0px;
 }
 
 .pro-discrp {
-    font-size: 14px;
-    margin-bottom: 50px;
+    font-size: 13px;
+    margin-bottom: 20px;
     width: calc(100% - 0vw);
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.5;
 
 }
 
@@ -398,11 +400,14 @@ font-size: 12px;
 /* MQ -----------------------------------------------------------------------*/
 @media (min-width: 992px) {
     .pro-discrp {
-        width: calc(100% - 29vw);
+        width: calc(100% - 50px);
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-left: 1.5rem;
+    }
+    .title-sub-text {
+        width: calc(100% - 250px);
     }
 }
 
