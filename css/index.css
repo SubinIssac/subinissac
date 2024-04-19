@@ -2,11 +2,12 @@ body {
     font-size: 14px;
     color: #2E2E38;
     font-family: 'Open Sans', sans-serif;
-    background-image: radial-gradient(at 40% 20%, hsl(206deg 81% 81% / 35%) 0px, transparent 50%), 
+    /* background-image: radial-gradient(at 40% 20%, hsl(206deg 81% 81% / 35%) 0px, transparent 50%), 
     radial-gradient(at 100% 100%, hsl(105.75deg 82% 74% / 21%) 0px, transparent 50%),
      radial-gradient(at 0% 0%, hsl(189deg 100% 56% / 0%) 0px, transparent 50%), 
      radial-gradient(at 0% 97%, hsl(94.07deg 43.85% 70.81% / 45%) 0px, transparent 50%), 
-     radial-gradient(at 79% 2%, hsla(103, 58%, 65%, 15%) 0px, transparent 50%);
+     radial-gradient(at 79% 2%, hsla(103, 58%, 65%, 15%) 0px, transparent 50%); */
+     background-color: #fdfcf9;
 }
 
 @font-face {
@@ -99,19 +100,22 @@ radial-gradient(at 79% 2%, hsla(103,58%,65%,15%) 0px, transparent 50%); */
 }
 
 .intro-text {
-    color: #000849;
     padding-top: 100px;
+    font-size: 36px;
+
 }
 
 .intro-text h1 {
-    font-size: 52px;
-    margin-bottom: 28px;
+    margin-bottom: 10px;
+   
 }
 
 .intro-text p {
-    font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.3;
     margin-bottom: 50px;
+    font-weight: 500;
+    color: #9e9e9e;
+ 
 }
 
 .middle-section {
@@ -125,15 +129,15 @@ radial-gradient(at 79% 2%, hsla(103,58%,65%,15%) 0px, transparent 50%); */
 }
 
 .title-sub-text {
-    font-size: 16px;
+    font-size: 28px;
     margin-top: 14px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 1.3;
+    color: #9e9e9e;
 }
 
 .sec-title {
-    font-size: 32px !important;
-    font-weight: bold;
+    font-size: 30px !important;
     margin: 0px 0px 20px;
     
 }
@@ -163,19 +167,19 @@ radial-gradient(at 79% 2%, hsla(103,58%,65%,15%) 0px, transparent 50%); */
 }
 
 .proj-1 {
-    background-image: linear-gradient(90deg, rgb(0 26 60) 0%, rgb(6 6 6 / 58%) 55%, rgb(255 255 255 / 0%) 100%), url(../images/realestate.png);
+    background-image: linear-gradient(90deg, rgb(77 77 77) 0%, rgb(6 6 6 / 58%) 55%, rgb(255 255 255 / 0%) 100%), url(../images/realestate.png);
 }
 
 .proj-2 {
-    background-image: linear-gradient(90deg, rgb(0 26 60) 0%, rgb(6 6 6 / 58%) 55%, rgb(255 255 255 / 0%) 100%), url(../images/facile-fly.png);
+    background-image: linear-gradient(90deg, rgb(77 77 77) 0%, rgb(6 6 6 / 58%) 55%, rgb(255 255 255 / 0%) 100%), url(../images/facile-fly.png);
 }
 
 .proj-3 {
-    background-image: linear-gradient(90deg, rgb(0 26 60) 0%, rgb(6 6 6 / 58%) 55%, rgb(255 255 255 / 0%) 100%), url(../images/ccpeople.png);
+    background-image: linear-gradient(90deg, rgb(77 77 77) 0%, rgb(6 6 6 / 58%) 55%, rgb(255 255 255 / 0%) 100%), url(../images/ccpeople.png);
 }
 
 .proj-4 {
-    background-image: linear-gradient(90deg, rgb(0 26 60) 0%, rgb(6 6 6 / 58%) 55%, rgb(255 255 255 / 0%) 100%), url(../images/etihad/head-img.webp);
+    background-image: linear-gradient(90deg, rgb(77 77 77) 0%, rgb(6 6 6 / 58%) 55%, rgb(255 255 255 / 0%) 100%), url(../images/etihad/head-img.webp);
 }
 
 .card.proj-1 h6:first-child {
@@ -327,6 +331,9 @@ img {
     .Project-page .nav-link svg:hover, .Project-page .pro-footer-item svg:hover {
         fill: #007bff;
         }
+        .navbar-light .navbar-toggler {
+            border-color: rgb(0 0 0 / 0%);
+        }
 /* COmmon---end*/
 .brands{
     padding: 50px 0;
@@ -406,8 +413,8 @@ font-size: 12px;
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-left: 1.5rem;
     }
-    .title-sub-text {
-        width: calc(100% - 250px);
+    .Intro-section{
+        min-height: 678px;
     }
 }
 
@@ -432,7 +439,8 @@ margin-bottom: 15px;
 
     .intro-image-img {
        
-        opacity: .1;
+        opacity: .05;
+        margin-top: 0;
         
     }
 
@@ -445,7 +453,7 @@ margin-bottom: 15px;
 @media (max-width: 567px) {
     
     .intro-image-img {
-        opacity: .1;
+        opacity: .05;
         right: 0;
         top: unset;
     }
